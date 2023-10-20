@@ -755,24 +755,34 @@ p{
 .banner-prod-sale .content-main{
     display: flex;
 }
-.banner-prod-sale .left-banner-sale{
+.banner-prod-sale .left-banner-sale, .banner-prod-sale .right-banner-sale{
     position: relative;
-    min-height: 260px;
+    max-height: 260px;
     overflow: hidden;
 }
-.banner-prod-sale .left-banner-sale .bg-banner-left{
+.banner-prod-sale .left-banner-sale .bg-banner-left, .banner-prod-sale .right-banner-sale .bg-banner-right{
     width: 100%;
     height: 100%;
     border-radius: 8px;
     position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
 }
-.banner-prod-sale .contain-left{
+.banner-prod-sale .left-banner-sale .bg-banner-left img, .banner-prod-sale .right-banner-sale .bg-banner-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.banner-prod-sale .contain-left,.banner-prod-sale .contain-right {
     position: absolute ;
     top: 0;
     left: 0;
     border-radius: 8px;
     width: 100%;
     height: 100%;
+    padding-left: auto;
+    padding-right: auto;
     background-size: cover;
     z-index: 2;
 }
@@ -782,13 +792,11 @@ p{
 .banner-prod-sale .right-banner-sale .content{
     padding: 52px 60px 32px;
 }
-.banner-prod-sale .right-banner-sale{
-    min-height: 260px;
-}
 .banner-prod-sale .contain-right{
-    border-radius: 8px;
-    height: 100%;
-    background-size: cover;
+
+}
+.banner-prod-sale .left-banner-sale{
+    overflow-x: hidden;
 }
 .banner-prod-sale .left-banner-sale span{
     display: block;
@@ -803,18 +811,19 @@ p{
     background-color: none;
     border: none;
 }
-.banner-prod-sale .left-banner-sale .btn-link{
-    background-color: none;
+.banner-prod-sale .left-banner-sale .btn-link, .banner-prod-sale .right-banner-sale .btn-link{
+    background-color: transparent;
     border: none;
 }
-.banner-prod-sale .left-banner-sale .btn-link a{
+.banner-prod-sale .left-banner-sale .btn-link a,.banner-prod-sale .right-banner-sale .btn-link a{
     transition: all 0.5s;
     font-weight: 500;
     color: var(--color-text-main);
     display: flex;
     align-items: center;
+    transition: all 0.2s;
 }
-.banner-prod-sale .left-banner-sale .btn-link a ion-icon{
+.banner-prod-sale .left-banner-sale .btn-link a ion-icon,.banner-prod-sale .right-banner-sale .btn-link a ion-icon{
     margin-left: 2px;
     font-size: 19px;
     transition: all 0.2s;
@@ -822,17 +831,45 @@ p{
 .banner-prod-sale .left-banner-sale .btn-lin a{
     
 }
-.banner-prod-sale .left-banner-sale .btn-link a:hover{
+.banner-prod-sale .left-banner-sale .btn-link a:hover, .banner-prod-sale .right-banner-sale .btn-link a:hover{
     color: var(--color-btn);
 }
-.banner-prod-sale .left-banner-sale .btn-link a:hover ion-icon{
+.banner-prod-sale .left-banner-sale .btn-link a:hover ion-icon, .banner-prod-sale .right-banner-sale .btn-link a:hover ion-icon{
     margin-left:5px;
 }
 .banner-prod-sale .contain-left{
-    background-position: 100%;
     transition: ease-in-out 0.5s;
 }
-.banner-prod-sale .contain-left:hover{
-    background-position: 10%;
+.banner-prod-sale .left-banner-sale:hover .bg-banner-left img, .banner-prod-sale .right-banner-sale:hover .bg-banner-right img{
     transform: scale(1.05);
+}
+.banner-prod-sale .right-banner-sale h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+.banner-prod-sale .right-banner-sale h3 a{
+    color: var(--color-text-main);
+}
+.banner-prod-sale .right-banner-sale span{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 31px;
+}
+
+.product-deal{}
+.product-deal .content{}
+.product-deal .head-deal .left-header-deal{}
+.product-deal .main-deal{}
+.product-deal .main-deal .list-item-deal{
+    display: flex;
+    --width-item-deal:3;
+    --margin-item-deal:30px;
+    margin-left:-30px;
+}
+.product-deal .main-deal .list-item-deal .item-deal{
+    width: calc(100% / var(--width-item-deal));
+    margin-left: var(--margin-item-deal);
 }

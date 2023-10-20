@@ -837,7 +837,7 @@ p{
     background-position: 10%;
     transform: scale(1.05);
 }
-
+/* Thang */
 footer{
     background-color: var(--color-bg-footer);
 }
@@ -1002,6 +1002,6 @@ footer .footer-left a{
     color: #888A8C;
 }
 .footer-bottom a{
-    color: var(--color-btn);
+    color: var(--color-btn );
 }
 

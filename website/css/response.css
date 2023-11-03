@@ -1,0 +1,146 @@
+.shop .filter-Cart .body-filter{
+    width: 100%;
+    padding: 0 12px;
+}
+.shop .filter-Cart .body-filter .item-filter{
+    margin-bottom: 20px;
+}
+
+.shop .filter-Cart .body-filter .item-filter h4{
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-border-prod);
+    margin-bottom: 20px;
+}
+
+.shop .filter-Cart .body-filter .item-filter .Categories-item{
+    height: 200px;
+    width: 100%;
+}
+.shop .filter-Cart .body-filter .item-filter  ul {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    
+}
+
+/* Thiết lập danh sách */
+.shop .filter-Cart .body-filter .item-filter  ul {
+    padding: 15px 15px 15px 0px;
+    margin: 0;
+}
+
+/* Thiết lập mục danh sách */
+.shop .filter-Cart .body-filter .item-filter li {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.shop .filter-Cart .body-filter .item-filter li a{
+    color: var(--color-sub-text);
+    position: relative;
+    display: inline-block;
+    padding-left: 17px;
+    padding-bottom: 10px;
+}
+.shop .filter-Cart .body-filter .item-filter .Categories-item ul li a::before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    text-align: center;
+    background-color: var(--color-sub-text);
+    border-radius: 50%;
+    padding: 2px;
+}
+.shop .filter-Cart .body-filter .item-filter .Categories-item ul li:hover a::before{
+    background-color: var(--color-btn);
+}
+.shop .filter-Cart .body-filter .item-filter .Categories-item ul li:hover a{
+    color: var(--color-btn);
+}
+.shop .filter-Cart .body-filter .item-filter  ul li:hover button{
+    background-color: var(--color-btn);
+    color: var(--color-white);
+}
+.shop .filter-Cart .body-filter .item-filter li button{
+    background-color: var(--color-white);
+    border: 0.5px solid var(--color-sub-text-1);
+    border-radius: 5px;
+    height: 80%;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color1 div{
+    background-color: #C1BAE4;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color2 div{
+    background-color: #C1BAE4;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color3 div{
+    background-color: #F3C0D1;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color4 div{
+    background-color: #64BFD1;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color5 div{
+    background-color: #03E2DD;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color6 div{
+    background-color: #484848;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color7 div{
+    background-color: #F17B3D;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color8 div{
+    background-color: #455D89;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color9 div{
+    background-color: #414141;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color10 div{
+    background-color: #DED3DB;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color11 div{
+    background-color: #000000;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color12 div{
+    background-color: #D0C9D0;
+}
+.shop .filter-Cart .body-filter .item-filter .item-color li .color {
+    display: flex;
+}
+
+.shop .filter-Cart .body-filter .item-filter .item{
+    display: flex;
+    width: 100%;
+}
+.shop .filter-Cart .body-filter .item-filter .item-top{
+ width: 50%;
+    
+}
+.shop .filter-Cart .body-filter .item-filter .item .item-top img{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f3f5;
+}
+.shop .filter-Cart .body-filter .item-filter .item .body-product{
+    padding-left: 10px;
+    width: 75%;
+}
+.shop .filter-Cart .body-filter .item-filter .item {
+    margin-bottom: 20px;
+}
+.shop .filter-Cart .body-filter .item-filter .item-img img{
+    width: 45%;
+    padding: 30px;
+
+  
+}

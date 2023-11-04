@@ -196,41 +196,42 @@ p{
     font-size: 14px;
     font-weight: 500;
 }
-.area-center .main-right .wislist{
+.area-center .main-right .wishlist{
     margin-left: 50px;
 }
-.area-center .main-right .wislist a{
+.area-center .main-right .wishlist a{
     text-decoration: none;
     font-size: 25px;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.area-center .main-right .wislist a ion-icon{
+.area-center .main-right .wishlist a ion-icon{
     
 }
-.area-center .main-right .wislist a span,.area-center .main-right .cart button span
+.area-center .main-right .wishlist a span,
+.area-center .main-right .cart a span
 {
     position: absolute;
     top: -8px;
     right: -10px;
-    display: block;
-    background-color: var(--color-sub-btn);
-    color: var(--color-white);
-    width: 23px;
-    height: 23px;
-    outline: 1px solid var(--color-white);
+    font-size: 12px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
+    background-color: var(--color-item-feature);
+    color: var(--color-white);
 }
 .area-center .main-right .cart{
     margin-left: 15px;
     display: flex;
     align-items: center;
 }
-.area-center .main-right .cart button{
+.area-center .main-right .cart a{
     background-color: var(--color-white);
     outline: none;
     border: none;
@@ -239,7 +240,7 @@ p{
     width: 25px;
     height: 25px;
 }
-.area-center .main-right .cart button ion-icon{
+.area-center .main-right .cart a ion-icon{
     font-size: 25px;
     color: var(--color-sub-text);
 }

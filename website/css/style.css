@@ -24,6 +24,7 @@ body{
     --color-bg-item:#f6f7f9;
     --color-sub-text:#55585B;
     --color-item-feature: #fd4b6b;
+    --color-item-categories:#f3f5f7;
     --color-border-prod:#eaebed;
     --color-sub-btn:#FD2D6C;
     --color-sub-text-1:#767a7d;
@@ -245,6 +246,7 @@ p{
 
 .header .area-bottom{
     border-top: 0.5px solid rgb(221, 220, 220);
+    border-bottom: 0.5px solid rgb(221, 220, 220);
 }
 .header .area-bottom .menu{
     display: flex;
@@ -1817,8 +1819,251 @@ footer .footer-left a{
 .shop .filter-Cart .body-filter .item-filter .item-img img{
     width: 45%;
     padding: 30px;
-
-  
 }
 
 
+
+/* User inteface Categories product */
+.list-categories{
+
+}
+.list-categories .content{
+    padding: 100px 0;
+}   
+.header-categories h2{
+    font-size: 44px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+}
+.header-categories .path-page{
+    font-size: 16px;
+    color: var(--color-sub-text);
+    display: flex;
+    align-items: center;
+}
+.header-categories .path-page .line-between{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    color: var(--color-sub-text);
+    background-color: rgb(183, 183, 183);
+    margin: 0 10px;
+}
+.list-categories .main-categories{
+    margin-top: 50px;
+}
+.list-categories .list-item-categories{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    --number-item-categories: 4;
+    --ml-item-categories:25px;
+    --height-item-categories:140px;
+}
+.list-categories .item-categories{
+    width:calc(calc(100% / var(--number-item-categories)) - var(--ml-item-categories) );
+    background-color: var(--color-item-categories);
+    margin-left: var(--ml-item-categories);
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--height-item-categories);
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.list-categories .title-categories{
+    font-size: 24px;
+    font-weight: 600;
+}
+.list-categories .title-categories a{
+    color: var(--color-text-main);
+    transition: all 0.5s;
+}
+.list-categories .title-categories:hover a{
+    color: var(--color-btn);
+}
+.list-categories .number-products{
+    color: var(--color-sub-text);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+/* Login account */
+.login-account{
+
+}
+.login-account .content{
+    padding: 100px 0;
+}
+.login-account .header-login{
+    text-align: center;
+    padding: 50px 0;
+}
+.login-account .header-login h2{
+    font-size: 44px;
+    font-weight: 500;
+}
+.login-account .main-login{
+    display: flex;
+    justify-content: center;
+}
+.background-login{
+
+}
+.background-login .image-one, 
+.background-login .image-two,
+.background-login .image-three,
+.background-login .image-four
+{
+    position: absolute;
+    z-index: -1;
+}
+.background-login .image-one{
+    left: 18%;
+}
+.background-login .image-two{
+    bottom:-38%;
+    left: 25%;
+}
+.background-login .image-three{
+    right: 20%;
+}
+.background-login .image-four{
+    right: 7%;
+    bottom: -38%;
+}
+.login-account .form-login-account{
+    padding: 50px 60px 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 50%;
+}
+.login-account .header-title-form{
+    text-align: center;
+}
+.login-account .header-title-form h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.login-account .header-title-form span{
+    display: block;
+    color:#49535b;
+    margin-top: 5px;
+}
+.login-account .header-title-form span a{
+    color: var(--color-btn);
+}
+.login-account .login-with-google{
+    height: 40px;
+}
+.login-account .login-method-other{
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.login-account .login-method-other span{
+    display: inline-block;
+    padding: 0 10px;
+    width: fit-content;
+    background-color: var(--color-white);
+}
+.login-account .login-method-other::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    background-color: var(--color-border-prod);
+}
+.group-item-login{
+    position: relative;
+    margin-bottom: 30px;
+}
+.group-item-login label{
+    position: absolute;
+    display: block;
+    top: -9px;
+    left: 20px;
+    font-size: 14px;
+    z-index: 2;
+    background-color: white;
+}
+.group-item-login input{
+    height: 56px;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: 1px solid var(--color-border-prod);
+    padding: 0 25px;
+}
+.group-item-login input::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(160, 160, 160);
+    font-family: inherit;
+}
+.group-item-login .contain-password{
+    position: relative;
+}
+.group-item-login .contain-password .display-password{
+   position: absolute;
+   right: 10px;
+   top: 37%;
+}
+.group-item-login .contain-password .display-password .eye-display{
+    display: block;
+}
+.group-item-login .contain-password .display-password .eye-non-display{
+    display: none;
+}
+.group-item-login .message-error{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.form-login-account .group-other{
+    display: flex;
+    justify-content: space-between;
+}
+.check-box{
+    display: flex;
+    align-items:center;
+}
+.check-box input {
+    margin-right: 5px;
+}
+.check-box span{
+    color: var(--color-sub-text-1);
+}
+.form-login-account .forgot-pass a{
+    color: var(--color-btn);
+}
+.form-login-account .btn-login{
+    margin-top: 20px;
+}
+.form-login-account .btn-login button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-text-main);
+    color: var(--color-white);
+    font-weight: 600;
+}
+.form-login-account .direct-login{
+    margin-top: 20px;
+    text-align: center;
+}
+.form-login-account .direct-login span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-sub-text);
+}
+.form-login-account .direct-login span a{
+    color: var(--color-btn);
+}

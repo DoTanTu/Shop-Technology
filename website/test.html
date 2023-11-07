@@ -1,30 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-       .original-css {
-  background-color: blue;
-  color: white;
-}
-
-.new-css {
-  background-color: red;
-  color: yellow;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+    }
+    .row1 div{
+      padding: 50px;
+      position: sticky;
+      top :0;
+      position: -webkit-sticky;
+      background-color: aquamarine;
+      display: flex;
+    }
+    .row1 div p{
+     
+    }
+    .banner{
+      position: fixed;
+      width: 500px;
+      height: 300px;
+      background-color: rgb(149, 0, 255);
+      right: -100%;
+    }
+    .selected{
+      right: 0;
+    }
+    
+  </style>
 </head>
-<body>
-    <button id="myButton" class="original-css">Click me</button>
-    <script src="./js/script.js"></script>
-    <!-- <script>
-        // Lấy tham chiếu đến phần tử DOM
-var myButton = document.getElementById("myButton");
-
-// Đăng ký sự kiện click cho nút
-myButton.addEventListener("click", function() {
-  // Thay đổi lớp CSS của nút
-  myButton.classList.toggle("new-css");
-});
-    </script> -->
+<body >
+  
+  <div class="row1" >
+    <div>
+      <button class="btn" id="btn"> click you</button>
+    </div>
+    
+    
+  </div>
+  <div class="row2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quis minus iure asperiores a voluptate fugiat explicabo, aliquid quibusdam, est deserunt iste debitis! Eligendi perspiciatis sit cumque ratione ab?</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id illo facilis natus, dolorem sapiente velit quas provident suscipit debitis repudiandae delectus tempora quaerat? Provident architecto earum ipsam aspernatur perferendis.hsdsfllllll Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, reprehenderit! Labore non magni repellendus! Corporis non aut voluptate neque modi, consequatur iste ab, officia totam, provident laborum dolorem. Adipisci, vero?</p>
+  </div>
+  <div class="banner" id="banner">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam asperiores nam, obcaecati nulla, repellat vero molestias, repudiandae id animi adipisci exercitationem. Quae odio magnam ratione reprehenderit nam sint optio.</p>
+  </div>
+  <script>
+    let btn = document.getElementById('btn')
+    let banner = document.getElementById('banner')
+    btn.addEventListener('click',function(){
+        banner.classList.toggle('selected')
+    })
+  </script>
+  
 </body>
 </html>

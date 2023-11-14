@@ -136,7 +136,295 @@
                 </div>
     
             </div>
-            <div class="shop-body">
+            <div class="shop-body"> 
+                
+                <div class="body-filter hidden-filter" id="filter" >
+                    <Button class="close hidden-filter" id="close">
+                        <img src="./img/close.png" alt="">
+                        close
+                    </Button>
+                    <div class="item-filter filter-price">
+                        <h4>Price Filter</h4>
+                    </div>
+                    <div class="item-filter ">
+                        <h4>Product Status</h4>
+                        <label class="checkbox">
+                            <input type="checkbox" name="option" onclick="handleCheckbox(this)"> On sale
+                        </label>
+                        <br>
+                        <br>
+                        <label class="checkbox">
+                            <input type="checkbox" name="option" onclick="handleCheckbox(this)"> In Stock
+                        </label>
+                        <br>
+                        
+                       
+                    </div>
+                    <div class="item-filter ">
+                        <h4>Categories</h4>
+                        <div class="Categories-item">
+                            <ul>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                                <li><a href="">thang</a> <button>2</button></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-filter ">
+                        <h4>Filter By Color</h4>
+                        <div class="item-color">
+                            <ul>
+                                <li><div class="color color1"><div></div><a href="">Purply Blue</a> </div><button>2</button></li>
+                                <li><div class="color color2"><div></div><a href="">Light Grey</a> </div><button>2</button></li>
+                                <li><div class="color color3"><div></div><a href="">Baby Pink</a> </div><button>2</button></li>
+                                <li><div class="color color4"><div></div><a href="">Bluish Cyan</a> </div><button>2</button></li>
+                                <li><div class="color color5"><div></div><a href="">Cyan</a> </div><button>2</button></li>
+                                <li><div class="color color6"><div></div><a href="">Dark Grey</a> </div><button>2</button></li>
+                                <li><div class="color color7"><div></div><a href="">Orange</a> </div><button>2</button></li>
+                                <li><div class="color color8"><div></div><a href="">Tealish Blue</a> </div><button>2</button></li>
+                                <li><div class="color color9"><div></div><a href="">Silver</a> </div><button>2</button></li>
+                                <li><div class="color color10"><div></div><a href="">Reddish Magenta</a> </div><button>2</button></li>
+                                <li><div class="color color11"><div></div><a href="">Black</a> </div><button>2</button></li>
+                                <li><div class="color color12"><div></div><a href="">Gray</a> </div><button>2</button></li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="item-filter ">
+                        <h4>Top Rated Products</h4>
+                        
+                        <div class="item">
+                            <div class="item-top">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="./img/headphone-1.png" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="body-product">
+            
+                                <div class="prod-rating">
+                                    <div class="prod-icon-rating">
+                                        <span class="list-item-rating">
+                                            <span class="none-choose">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                            <span class="choosed">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="h3">
+                                    <a href="">Lenovo Sports Bluetooth</a>
+                                </div>
+                                <div class="prod-price">
+                                    
+                                    <span class="new-price">
+                                        $66.60
+                                    </span>
+                                   
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="item">
+                            <div class="item-top">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="./img/headphone-1.png" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="body-product">
+            
+                                <div class="prod-rating">
+                                    <div class="prod-icon-rating">
+                                        <span class="list-item-rating">
+                                            <span class="none-choose">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                            <span class="choosed">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="h3">
+                                    <a href="">Lenovo Sports Bluetooth</a>
+                                </div>
+                                <div class="prod-price">
+                                    
+                                    <span class="new-price">
+                                        $66.60
+                                    </span>
+                                   
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="item">
+                            <div class="item-top">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="./img/headphone-1.png" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="body-product">
+            
+                                <div class="prod-rating">
+                                    <div class="prod-icon-rating">
+                                        <span class="list-item-rating">
+                                            <span class="none-choose">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                            <span class="choosed">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="h3">
+                                    <a href="">Lenovo Sports Bluetooth</a>
+                                </div>
+                                <div class="prod-price">
+                                    
+                                    <span class="new-price">
+                                        $66.60
+                                    </span>
+                                   
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="item">
+                            <div class="item-top">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="./img/headphone-1.png" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="body-product">
+            
+                                <div class="prod-rating">
+                                    <div class="prod-icon-rating">
+                                        <span class="list-item-rating">
+                                            <span class="none-choose">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                            <span class="choosed">
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                                <svg class="star-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="h3">
+                                    <a href="">Lenovo Sports Bluetooth</a>
+                                </div>
+                                <div class="prod-price">
+                                    
+                                    <span class="new-price">
+                                        $66.60
+                                    </span>
+                                   
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                    <div class="item-filter ">
+                        <h4>
+                            Popular Brands
+                        </h4>
+                        <div class="item-img">
+                            <img src="./img/brand-2.png" alt="">
+                            <img src="./img/brand-2.png" alt="">
+                            <img src="./img/brand-2.png" alt="">
+                            <img src="./img/brand-2.png" alt="">
+                            <img src="./img/brand-2.png" alt="">
+                            <img src="./img/brand-2.png" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="item-filter ">
+                        <h4>
+                            Popular Brands
+                        </h4>
+                        <button class="nav-filter">
+                            <span><svg viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9998 3.45001H10.7998" stroke="currentColor" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.8 3.45001H1" stroke="currentColor" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M6.5999 5.9C7.953 5.9 9.0499 4.8031 9.0499 3.45C9.0499 2.0969 7.953 1 6.5999 1C5.2468 1 4.1499 2.0969 4.1499 3.45C4.1499 4.8031 5.2468 5.9 6.5999 5.9Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M15.0002 11.15H12.2002" stroke="currentColor" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.2 11.15H1" stroke="currentColor" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M9.4002 13.6C10.7533 13.6 11.8502 12.5031 11.8502 11.15C11.8502 9.79691 10.7533 8.70001 9.4002 8.70001C8.0471 8.70001 6.9502 9.79691 6.9502 11.15C6.9502 12.5031 8.0471 13.6 9.4002 13.6Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></span>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden-filter" id="bg">
+                </div>
                 <div class="body-filter">
                     <div class="item-filter filter-price">
                         <h4>Price Filter</h4>
@@ -483,7 +771,7 @@
                                   </ul>
                                 </div>
                               </div>
-                            <button class="nav-filter">
+                            <button class="nav-filter" id="btn-filter">
                                 <span><svg viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.9998 3.45001H10.7998" stroke="currentColor" stroke-width="1.5"
                                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2120,6 +2408,7 @@
         
         
     </div>
+    
     <footer>
         <div class="footer-content">
             <div class="footer-left">

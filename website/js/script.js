@@ -251,6 +251,32 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 
+    // ẩn hiện filter
+    let btn_filter = document.getElementById('btn-filter');
+    let filter = document.getElementById('filter');
+    let bg = document.getElementById('bg');
+    let close = document.getElementById('close');
+    
+    btn_filter.addEventListener('click',function(){
+      filter.classList.add('hidden-filter-selected');
+      bg.classList.add('bg');
+      close.classList.add('hidden-filter-close')
+    } )
+
+    bg.addEventListener('click',function(){
+      filter.classList.remove('hidden-filter-selected');
+      bg.classList.remove('bg');
+      close.classList.remove('hidden-filter-close')
+    })
+    
+    close.addEventListener('click',function(){
+      filter.classList.remove('hidden-filter-selected');
+      bg.classList.remove('bg');
+      close.classList.remove('hidden-filter-close')
+    })
+   
   
 
 });
+
+

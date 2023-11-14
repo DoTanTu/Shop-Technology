@@ -110,10 +110,31 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+const tabs = document.querySelectorAll('.tab-item');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        const line = document.querySelector('.tab-header .line');
+        const tabInit = document.querySelector('.tab-item');
+        console.log(tabInit);
+        console.log(tabInit.offsetWidth);
+        line.style.left = tabInit.offsetLeft + 'px';
+        line.style.width = tabInit.offsetWidth + 'px';
+        tabs.forEach(function(tab, i) {
+            const pane = tabPanes[i];
+            tab.onclick = function() {
+                document.querySelector('.tab-item.active').classList.remove('active')
+                document.querySelector('.tab-pane.active').classList.remove('active')
+                line.style.left = this.offsetLeft + 'px';
+                line.style.width = this.offsetWidth + 'px';
+                tab.classList.add('active')
+                pane.classList.add('active');
+            }
+        })
 
 var titlefull = "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.See less"
 var title = "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset ha..."
 
 let title_P = document.getElementById('title-prod');
-let see_more = document.getElementById('see-more')
+let see_more = document.getElementById('see-more');
+
+
 

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-       .original-css {
-  background-color: blue;
-  color: white;
-}
-
-.new-css {
-  background-color: red;
-  color: yellow;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+    }
+    .row1 div{
+      padding: 50px;
+      position: sticky;
+      top :0;
+      position: -webkit-sticky;
+      background-color: aquamarine;
+      display: flex;
+    }
+    .row1 div p{
+     
+    }
+    .banner{
+      position: fixed;
+      
+      width: 500px;
+      background-color: wheat;
+      right: -100%;
+    }
+    .selected{
+      right: 50px;
+      overflow-y: scroll;
+      height: 100vh;
+      overscroll-behavior-y: none;
+    }
+    
+  </style>
 </head>
 <body>
     <button id="myButton" class="original-css">Click me</button>

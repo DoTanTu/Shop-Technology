@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       .original-css {
+  background-color: blue;
+  color: white;
+}
+
+.new-css {
+  background-color: red;
+  color: yellow;
+}
+    </style>
+</head>
+<body>
+    <button id="myButton" class="original-css">Click me</button>
+    <div class="setTime">
+      <span class="hour">5</span>
+      <span class="minute">5</span>
+      <span class="second">5</span>
+    </div>
+    <script>
+
+      // var timer = parseInt(document.querySelector('.second').innerHTML);
+      // setSecond(timer);
+
+      // function setSecond(time){
+      //   setInterval(function(){
+      //     if(timer > 0){
+      //        timer -= 1;
+      //       }
+      //     else{
+             
+      //        var minute = parseInt(document.querySelector('.minute').innerHTML);
+      //        setMinute(minute);
+      //        timer = 5;
+      //       }
+      //     document.querySelector('.second').innerHTML = timer;
+      //   },1000)
+      // }
+
+      // function setMinute(minute){
+      //         if(minute > 0){
+      //           minute -= 1;
+      //         }else{
+      //           minute = 5;
+      //           var hour = parseInt(document.querySelector('.hour').innerHTML);
+      //           setHour(hour);
+      //         }
+      //     document.querySelector('.minute').innerHTML = minute;
+      // }
+
+      // function setHour(hour){
+      //   if(hour > 0){
+      //     hour -= 1;
+      //   }else{
+      //     hour = 23;
+          
+      //   }
+      //   document.querySelector('.hour').innerHTML = hour;
+      // }
+
+      // function setDay(day){
+      //   if(day > 0){
+      //     day -= 1;
+      //   }
+      //   document.querySelector('.day').innerHTML = day;
+      // }
+      function wait(time) {
+          return new Promise((resolve) => {
+            setTimeout(resolve, time);
+          });
+        }
+
+        function countdown(elementSelector, initialValue, nextHandler) {
+          let value = parseInt(document.querySelector(elementSelector).innerHTML);
+
+          function updateValue(newValue) {
+            document.querySelector(elementSelector).innerHTML = newValue;
+          }
+
+          function decreaseValue() {
+            if (value > 0) {
+              value -= 1;
+            } else {
+              value = initialValue;
+              nextHandler();
+            }
+            updateValue(value);
+          }
+
+          function startCountdown() {
+            setInterval(decreaseValue, 1000);
+          }
+
+          return {
+            start: startCountdown,
+          };
+        }
+
+        function setMinute() {
+          // Logic for setting minute
+        }
+
+        function setHour() {
+          // Logic for setting hour
+        }
+
+        function setDay() {
+          // Logic for setting day
+        }
+
+        // Usage
+        const secondCountdown = countdown('.second', 5, setMinute);
+        const minuteCountdown = countdown('.minute', 60, setHour);
+        const hourCountdown = countdown('.hour', 24, setDay);
+
+        secondCountdown.start();
+
+    </script>
+</body>
+</html>

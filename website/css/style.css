@@ -496,6 +496,192 @@ p{
     color: var(--color-sub-text);
 }
 
+
+
+
+
+/* shop-cart */
+
+
+
+.shop-cart .main {
+    display: flex;
+    padding-bottom: 120px;
+}
+.shop-cart .main .row-1{
+    width: 70%;
+}
+.shop-cart .main .row-2{
+    width: 30%;
+    background-color: var(--color-white);
+}
+.shop-cart .main table thead{
+    background-color: #f1f3f4;
+
+    
+}
+.shop-cart .main table .th-product{
+    width: 10%;
+    
+    padding: 9px 0px 9px 9px;
+   
+}
+.shop-cart .main table .th-tilte{
+    width: 40%;
+    background-color: var(--color-btn-bgr);
+
+}
+.shop-cart .main table .th-price{
+    width: 10%;
+    padding: 9px 0px;
+}
+.shop-cart .main table .th-quantity{
+    width: 20%;
+    padding: 9px 0px;
+}
+.shop-cart .main table .th-remove{
+    width: 20%;
+}
+.shop-cart .main table tbody .item{
+   
+    border: 0 solid;
+    border-color: inherit;
+}
+.shop-cart .main table .tp-cart-img{
+    color: transparent;
+    padding-top: 30px!important;
+    
+
+}
+.shop-cart .main table .tp-cart-img img{
+    background-color: var(--color-btn-bgr); 
+    width: 78px;
+    height: 100px;
+    color: transparent;
+    object-fit: cover;
+}
+.shop-cart .main table .tp-cart-title a{
+   color: var(--color-text-main);
+   font-size: 16px;
+   font-family: var(--font-jost);
+}
+.shop-cart .main table .tp-cart-title a:hover{
+    color: var(--color-btn);
+}
+.shop-cart .main table .tp-cart-price{
+    color: var(--color-text-main);
+}
+.shop-cart .main table .tp-cart-quantity .tp-product-quantity{
+    border: 1px solid #dadce0;
+    display: flex;
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    margin-left: 15%;
+    border-radius: 45px;
+}
+.shop-cart .main table .tp-cart-quantity .tp-product-quantity input{
+    border: none;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+.shop-cart .main table .tp-cart-action button{
+    border: none;
+    background-color: var(--color-white)!important;
+    color: var(--color-sub-text);
+}
+.shop-cart .main table .tp-cart-action button:hover svg{
+    color: var(--color-sub-btn);
+}
+.shop-cart .main table .tp-cart-action button:hover span{
+    color: var(--color-sub-btn);
+}
+.shop-cart .row-1 .button{
+    text-align: right!important;
+}
+.shop-cart .row-1 .button .clear-cart{
+    border: 1px solid #dadce0;
+    height: 40px;
+    right: 0;
+   
+    padding: 10px 25px;
+    color: var(--color-text-main);
+    font-weight: 600;
+    font-size: 16px;
+    background-color:var(--color-white);
+    cursor: pointer;
+} 
+.shop-cart .row-1 .button .clear-cart:hover{
+    color: var(--color-white);
+    background-color: var(--color-btn);
+    border: none;
+}
+.shop-cart .row-2{
+    background: var(--color-white);
+    box-shadow: 0 30px 70px rgba(1,15,28,.1);
+    padding: 36px 24px 28px;
+    margin-left: 25px;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-top{
+    display: flex;
+    justify-content: space-between!important;
+    padding-bottom: 13px;
+    margin-bottom: 19px;
+    border-bottom: 1px solid #e0e2e3;
+    color: var(--color-text-main);
+    font-family: var(--font-jost);
+    font-size: 20px;
+    font-weight: 600;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-shipping{
+    border-bottom: 1px solid #e0e2e3;
+    margin-bottom: 10px;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-shipping-title{
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 7px;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-shipping-option-wrapper{
+    font-weight: 400;
+    font-size: 14px;
+    color: #161c2d;
+    position: relative;
+    padding-left: 25px;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-shipping-option{
+    margin-bottom: 10px;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-shipping-option span{
+    color: var(--color-btn);
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-bottom{
+    display: flex;
+    justify-content: space-between!important;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+   
+    color: var(--color-text-main);
+    font-family: var(--font-jost);
+    font-size: 20px;
+    font-weight: 600;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-button{
+    align-items: center !important;
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-button button{
+    height: 40px;
+    width: 100%;
+    background-color: var(--color-text-main);
+    color: var(--color-white);
+    font-size: 16px;
+    border: none;
+   
+}
+.shop-cart .row-2 .tp-cart-checkout .tp-cart-checkout-button button:hover{
+    background-color: var(--color-btn);
+}
 /* Feature provice */
 .feature-service{
 

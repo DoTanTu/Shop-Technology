@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="area-top">
+                <div class="container">
+                    <div class="main">
+                        <div class="left">
+                            <span>
+                                <img src="./img/bus.png" width="22" height="19" alt="">
+                            </span>
+                            <p>FREE Express Shipping On Orders $570+</p>
+                        </div>
+                        <div class="right">
+                            <div class="english">
+                                <span>English</span>
+                            </div>
+                            <div class="money">'
+                                <span>USD</span>
+                            </div>
+                            <div class="setting">
+                                <span>Setting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-center">
+                <div class="container">
+                    <div class="main-area-center">
+                        <div class="logo-left w2">
+                            <img src="./img/logo.svg" alt="">
+                        </div>
+                        <div class="search-center w6">
+                            <div class="main">
+                                <input type="text" placeholder="Search for Products">
+                                <div class="btn-search">
+                                    <div class="content-btn-search">
+                                        <img src="./img/search.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-right w4">
+                            <div class="account-user">
+                                <div class="image-user">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+                                <div class="name-user">
+                                    <span>Hello</span>
+                                    <a href="">Sign in</a>
+                                </div>
+                            </div>
+                            <div class="wislist">
+                                <a href="">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                    <span>0</span>
+                                </a>
+                            </div>
+                            <div class="cart">
+                                <button>
+                                    <ion-icon name="bag-outline"></ion-icon>
+                                    <span>0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-bottom">
+                <div class="container">
+                    <div class="menu">
+                        <div class="start w3">
+                            <button class="">
+                                <span>
+                                    <ion-icon name="menu-outline"></ion-icon>
+                                </span>
+                                All Department
+                            </button>
+                        </div>
+                        <div class="center w6">
+                            <div class="main-menu">
+                                <ul>
+                                    <li>
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="end w4">
+                            <div class="hotline">
+                                <div class="image-call">
+                                    <img src="./img/phone-call.png" alt="">
+                                </div>
+                                <div class="number-phone">
+                                    <span>Hotline:</span>
+                                    <span>+(0412) 763 42</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container shop-cart">
+        <div class="header-section">
+            <h3>Shopping Cart</h3>
+            <div class="pagination">
+                <span class="dot"><a href="#">Home</a> </span>
+                <span>Shopping Cart</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="row-1">
+                <p>You are eligible for free shipping</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="th-product">Product</th>
+                            <th class="th-tilte"></th>
+                            <th class="th-price">Price</th>
+                            <th class="th-quantity">Quantity</th>
+                            <th class="th-remove"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="item">
+                            <td class="tp-cart-img">
+                                <a href="detail_product.html"><img alt="product img" src="./img/headphone-1.png"></a>
+                            </td>
+                            <td class="tp-cart-title">
+                                <a href="product-details">HeadphonesWireless.</a>
+                            </td>
+                            <td class="tp-cart-price">
+                                <span>$120.00</span>
+                            </td>
+                            <td class="tp-cart-quantity">
+                                <div class="tp-product-quantity mt-10 mb-10">
+                                    <span class="tp-cart-minus">
+                                        <svg width="11" height="12" viewBox="0 0 11 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H10" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    <input class="tp-cart-input" type="text" readonly="" value="1">
+                                    <span class="tp-cart-plus">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 6H10" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5.5 10.5V1.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="tp-cart-action">
+                                <button class="tp-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span> Remove</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="item">
+                            <td class="tp-cart-img">
+                                <a href="detail_product.html"><img alt="product img" src="./img/headphone-1.png"></a>
+                            </td>
+                            <td class="tp-cart-title">
+                                <a href="product-details">HeadphonesWireless.</a>
+                            </td>
+                            <td class="tp-cart-price">
+                                <span>$120.00</span>
+                            </td>
+                            <td class="tp-cart-quantity">
+                                <div class="tp-product-quantity mt-10 mb-10">
+                                    <span class="tp-cart-minus">
+                                        <svg width="11" height="12" viewBox="0 0 11 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H10" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    <input class="tp-cart-input" type="text" readonly="" value="1">
+                                    <span class="tp-cart-plus">
+                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 6H10" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5.5 10.5V1.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="tp-cart-action">
+                                <button class="tp-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span> Remove</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button">
+                    <button class="clear-cart">Clear Cart</button>
+                </div>
+
+            </div>
+            <div class="row-2">
+                <div class="tp-cart-checkout">
+                    <div class="tp-cart-checkout-top">
+                        <span>Subtotal</span>
+                        <span>
+                            <span>$</span>
+                            <span class="subtotal">0</span>
+                        </span>
+                    </div>
+                    <div class="tp-cart-checkout-shipping">
+                        <h4 class="tp-cart-checkout-shipping-title">Shipping</h4>
+                        <div class="tp-cart-checkout-shipping-option-wrapper">
+                            <div class="tp-cart-checkout-shipping-option"><input id="flat_rate" type="radio"
+                                    name="shipping"><label for="flat_rate">Flat rate: <span>$20.00</span></label></div>
+                            <div class="tp-cart-checkout-shipping-option"><input id="local_pickup" type="radio"
+                                    name="shipping"><label for="local_pickup">Local pickup: <span> $25.00</span></label>
+                            </div>
+                            <div class="tp-cart-checkout-shipping-option"><input id="free_shipping" type="radio"
+                                    name="shipping"><label for="free_shipping">Free shipping</label></div>
+                        </div>
+                    
+                        
+                        
+                    </div>
+                    <div class="tp-cart-checkout-bottom">
+                        <span>Total</span>
+                        <span>
+                            <span>$</span>
+                            <span class="total">0</span>
+                        </span>
+                    </div>
+                    <div class="tp-cart-checkout-button">
+                        <a href=""><button>Proceed to Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href=""><img src="./img/logo.svg" alt=""></a>
+                <p>We are a team of designers and developers that create high quality WordPress</p>
+                <div class="footer-left-contact">
+                    <a href=""><img src="./img/facebook-app-symbol.png" alt=""></a>
+                    <a href=""><img src="./img/twitter.png" alt=""></a>
+                    <a href=""><img src="./img/linkedin-big-logo.png" alt=""></a>
+                    <a href=""> <img src="img/vimeo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <h4>My Account</h4>
+                <div class="footer-item-content">
+                    <ul>
+                        <li><a href="#">Track Orders</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-2">
+                <h4>Information</h4>
+                <div class="footer-item-content">
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h4>Talk To Us</h4>
+                <div class="footer-right-talk">
+                    <p>Got Questions? Call us</p>
+                    <h4><a href="">+84 966 948 914</a></h4>
+                </div>
+
+                <div class="footer-right-contact">
+                    <div class="contact-content">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6H5"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M13 5.40039L10.496 7.40039C9.672 8.05639 8.32 8.05639 7.496 7.40039L5 5.40039"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M1 11.4004H5.8" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M1 8.19922H3.4" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <p><a href="mailto:shofy@support.com">shofy@support.com</a></p>
+                    </div>
+                    <div class="contact-content">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.50001 10.9417C9.99877 10.9417 11.2138 9.72668 11.2138 8.22791C11.2138 6.72915 9.99877 5.51416 8.50001 5.51416C7.00124 5.51416 5.78625 6.72915 5.78625 8.22791C5.78625 9.72668 7.00124 10.9417 8.50001 10.9417Z"
+                                stroke="currentColor" stroke-width="1.5"></path>
+                            <path
+                                d="M1.21115 6.64496C2.92464 -0.887449 14.0841 -0.878751 15.7889 6.65366C16.7891 11.0722 14.0406 14.8123 11.6313 17.126C9.88298 18.8134 7.11704 18.8134 5.36006 17.126C2.95943 14.8123 0.210885 11.0635 1.21115 6.64496Z"
+                                stroke="currentColor" stroke-width="1.5"></path>
+                        </svg>
+                        <p>
+                        <p><a href="https://www.google.com/maps/place/Sleepy+Hollow+Rd,+Gouverneur,+NY+13642,+USA/@44.3304966,-75.4552367,17z/data=!3m1!4b1!4m6!3m5!1s0x4cccddac8972c5eb:0x56286024afff537a!8m2!3d44.3304928!4d-75.453048!16s%2Fg%2F1tdsjdj4"
+                                target="_blank">79 Sleepy Hollow St. <br> Jamaica, New York 1432</a></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 All Rights Reserved | Next js Template by<a href="/"> ThemePure</a>.</p>
+            <img src="./img/footer-pay.png" alt="">
+        </div>
+
+    </footer>
+</body>
+
+</html>

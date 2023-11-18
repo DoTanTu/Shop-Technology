@@ -15,16 +15,59 @@
 </head>
 <body>
     <button id="myButton" class="original-css">Click me</button>
-    <script src="./js/script.js"></script>
-    <!-- <script>
-        // Lấy tham chiếu đến phần tử DOM
-var myButton = document.getElementById("myButton");
+    <div class="setTime">
+      <span class="hour">5</span>
+      <span class="minute">5</span>
+      <span class="second">5</span>
+    </div>
+    <script>
 
-// Đăng ký sự kiện click cho nút
-myButton.addEventListener("click", function() {
-  // Thay đổi lớp CSS của nút
-  myButton.classList.toggle("new-css");
-});
-    </script> -->
+      // var timer = parseInt(document.querySelector('.second').innerHTML);
+      // setSecond(timer);
+
+      // function setSecond(time){
+      //   setInterval(function(){
+      //     if(timer > 0){
+      //        timer -= 1;
+      //       }
+      //     else{
+             
+      //        var minute = parseInt(document.querySelector('.minute').innerHTML);
+      //        setMinute(minute);
+      //        timer = 5;
+      //       }
+      //     document.querySelector('.second').innerHTML = timer;
+      //   },1000)
+      // }
+
+      // function setMinute(minute){
+      //         if(minute > 0){
+      //           minute -= 1;
+      //         }else{
+      //           minute = 5;
+      //           var hour = parseInt(document.querySelector('.hour').innerHTML);
+      //           setHour(hour);
+      //         }
+      //     document.querySelector('.minute').innerHTML = minute;
+      // }
+
+      // function setHour(hour){
+      //   if(hour > 0){
+      //     hour -= 1;
+      //   }else{
+      //     hour = 23;
+          
+      //   }
+      //   document.querySelector('.hour').innerHTML = hour;
+      // }
+
+      // function setDay(day){
+      //   if(day > 0){
+      //     day -= 1;
+      //   }
+      //   document.querySelector('.day').innerHTML = day;
+      // }
+       
+    </script>
 </body>
 </html>

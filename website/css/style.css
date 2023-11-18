@@ -986,17 +986,40 @@ p{
     margin-bottom: 15px;
     color: var(--color-text-main);
 }
-.product-deal .item-deal .body-product .prod-rating{
+.product-deal .item-deal .prod-rating{
     display: flex;
 }
-.product-deal .item-deal .body-product .prod-rating .prod-icon-rating{
+.product-deal .item-deal .prod-rating .prod-icon-rating{
     margin-right: 10px;
 }
-.product-deal .item-deal .body-product .time-date-deal{}
-.product-deal .item-deal .body-product .time-date-deal ul{
+.product-deal .item-deal .time-date-deal{}
+.product-deal .item-deal .time-date-deal ul{
     display: flex;
+    padding-left: 0;
 }
-
+.product-deal .item-deal .time-date-deal ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e4e5e9;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.product-deal .item-deal .time-date-deal ul li span:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -.04em;
+    font-family: var(--font-roboto);
+}
+.product-deal .item-deal .time-date-deal ul li span:nth-child(2){
+    text-transform: uppercase;
+    font-size: 10px;
+    color: var(--color-sub-text);
+    font-weight: 500;
+    line-height: 1;
+}
 /* Thang */
 footer{
     background-color: var(--color-bg-footer);

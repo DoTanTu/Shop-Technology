@@ -3055,10 +3055,12 @@ footer .footer-left a{
     display: flex;
     --number-item-member: 3;
     --margin-left-member:20px;
+    margin-left: -20px;
 }
 .list_member .item_member{
     width: calc(calc(100% / var(--number-item-member)) - var(--margin-left-member));
     padding: 10px 20px;
+    margin-left: var(--margin-left-member);
 } 
 .item_member .border_item{
     border: 5px solid var(--color-btn);

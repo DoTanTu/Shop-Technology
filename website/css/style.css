@@ -3031,3 +3031,57 @@ footer .footer-left a{
     color: var(--color-btn);
 
 }
+.main_team_dev{
+    padding: 100px 0;
+}
+.list_member{
+    display: flex;
+    --number-item-member: 3;
+    --margin-left-member:20px;
+}
+.list_member .item_member{
+    width: calc(calc(100% / var(--number-item-member)) - var(--margin-left-member));
+    padding: 10px 20px;
+} 
+.item_member .border_item{
+    border: 5px solid gray;
+    padding: 20px 10px;
+    border-radius: 5px 10px 5px 25px;
+}
+.item_member .image_member{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 6px solid gray;
+}
+.image_member .image_border{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+.item_member .image_member img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item_member .desc{
+    padding: 15px 0;
+    text-align: center;
+}
+.item_member .body_desc{
+    padding: 10px 0;
+}
+.item_member .link_connect{
+    margin-top: 10px;
+}
+.item_member .link_connect button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    color: white;
+    background-image: linear-gradient(-90deg, red, blue);
+}

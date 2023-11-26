@@ -3031,8 +3031,25 @@ footer .footer-left a{
     color: var(--color-btn);
 
 }
+
+.heading_member{
+    padding: 50px 15px;
+}
+.heading_member h2{
+    font-size: 28px;
+    position: relative;
+}
+.heading_member h2::after{
+    content: "";
+    width: 200px;
+    top: 50%;
+    margin-left: 15px;
+    position: absolute;
+    border-bottom: 2px dashed var(--color-btn);
+    z-index: 2;
+}
 .main_team_dev{
-    padding: 100px 0;
+    padding: 5px 0;
 }
 .list_member{
     display: flex;
@@ -3044,7 +3061,7 @@ footer .footer-left a{
     padding: 10px 20px;
 } 
 .item_member .border_item{
-    border: 5px solid gray;
+    border: 5px solid var(--color-btn);
     padding: 20px 10px;
     border-radius: 5px 10px 5px 25px;
 }
@@ -3055,7 +3072,7 @@ footer .footer-left a{
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    border: 6px solid gray;
+    border: 6px solid rgb(19, 137, 255);
 }
 .image_member .image_border{
     border-radius: 50%;
